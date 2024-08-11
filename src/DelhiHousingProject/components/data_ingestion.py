@@ -21,7 +21,7 @@ class DataIngestion:
         try:
             #reading the data
             logging.info("Reading data from csv file")
-            df=pd.read_csv('/Notebooks/Delhi_housing_data.csv')
+            df=pd.read_csv('Notebooks/Delhi_housing_data.csv')
             df=df.drop('Address',axis=1)
             df.drop('Status',inplace=True,axis=1)
             df.drop('Landmarks',inplace=True,axis=1)
