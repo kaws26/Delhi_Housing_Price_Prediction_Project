@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Housing Price</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css" />
+    <link rel="icon" href="{{ url_for('static', filename='image.png') }}" type="image/x-icon">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Housing Price Predictor</a>
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict Housing Price</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/author">Author</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="predict">
+        <div class="container">
+            <h2>Predict the Housing Price in Delhi</h2>
+            <div class="instructions">
+                <p><strong>Instructions:</strong> Click on the map to select the location or use the search bar on the map to find your address. Longitude and latitude will be auto-filled.</p>
+            </div>
+            <form action="/predict" method="POST">
+                <div id="map" style="height: 300px;"></div>
+                <input type="hidden" id="longitude" name="longitude">
+                <input type="hidden" id="latitude" name="latitude">
+
+                <div class="form-group">
+                    <label for="area">Area (in sqft):</label>
+                    <input type="number" id="area" name="area" required>
+                </div>
+                <div class="form-group">
+                    <label for="bedrooms">Bedrooms:</label>
+                    <input type="number" id="bedrooms" name="bedrooms" required>
+                </div>
+                <div class="form-group">
+                    <label for="bathrooms">Bathrooms:</label>
+                    <input type="number" id="bathrooms" name="bathrooms" required>
+                </div>
+                <div class="form-group">
+                    <label for="balcony">Balcony:</label>
+                    <input type="number" id="balcony" name="balcony" required>
+                </div>
+                <div class="form-group">
+                    <label for="parking">Parking:</label>
+                    <input type="number" id="parking" name="parking" required>
+                </div>
+                <div class="form-group">
+                    <label for="lift">Lift:</label>
+                    <input type="number" id="lift" name="lift" required>
+                </div>
+                <div class="form-group">
+                    <label for="neworold">New or Resale:</label>
+                    <select id="neworold" name="neworold" required>
+                        <option value="New Property">New Property</option>
+                        <option value="Resale">Resale</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="furnished_status">Furnished Status:</label>
+                    <select id="furnished_status" name="furnished_status" required>
+                        <option value="Semi-Furnished">Semi-Furnished</option>
+                        <option value="Unfurnished">Unfurnished</option>
+                        <option value="Furnished">Furnished</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type_of_building">Type of Building:</label>
+                    <select id="type_of_building" name="type_of_building" required>
+                        <option value="Flat">Flat</option>
+                        <option value="Individual House">Individual House</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Predict</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        var map = L.map('map').setView([28.6139, 77.2090], 13); // Center the map on Delhi
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(map);
+
+        var marker;
+        map.on('click', function(e) {
+            var lat = e.latlng.lat;
+            var lng = e.latlng.lng;
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            marker = L.marker([lat, lng]).addTo(map);
+            document.getElementById('latitude').value = lat;
+            document.getElementById('longitude').value = lng;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Housing Price Predictor</a>
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict Housing Price</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/author">Author</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about">
+        <div class="container">
+            <h1>About the Project</h1>
+            <p>This project aims to predict housing prices in Delhi using a range of machine learning models. The dataset used for training the model is sourced from Kaggle, providing a comprehensive set of features to accurately predict property values.</p>
+            
+            <div class="project-details">
+                <h2>Machine Learning Models</h2>
+                <p>Various machine learning models were evaluated to find the best predictor for housing prices:</p>
+                <ul>
+                    <li><strong>Random Forest:</strong>Achieved the highest accuracy of 93% and was selected for its superior performance.</li>
+                    <li><strong>Decision Tree:</strong> Used a tree-like model of decisions to predict prices.</li>
+                    <li><strong>Gradient Boosting:</strong> An ensemble method that builds models sequentially to correct errors.</li>
+                    <li><strong>Linear Regression:</strong> Provided a simple linear approach to predicting prices.</li>
+                    <li><strong>XGBRegressor:</strong> </li>
+                    <li><strong>CatBoosting Regressor:</strong> Effective for categorical features and provided robust predictions.</li>
+                    <li><strong>AdaBoost Regressor:</strong> Boosted weak learners to improve accuracy.</li>
+                </ul>
+                
+                <h2>Dataset</h2>
+                <p>The model was trained on a dataset obtained from Kaggle. You can access the dataset and learn more about it via the following link:</p>
+                <p><a href="https://www.kaggle.com/datasets/goelyash/housing-price-dataset-of-delhiindia/data" target="_blank" class="dataset-link">Kaggle Dataset</a></p>
+                
+                <h2>Skills Utilized</h2>
+                <p>This project involved a range of skills and technologies, including:</p>
+                <ul>
+                    <li><strong>Machine Learning:</strong> Experience with various models and their application in predictive analytics.</li>
+                    <li><strong>Data Preprocessing:</strong> Techniques for cleaning and preparing data for model training.</li>
+                    <li><strong>Model Evaluation:</strong> Methods for evaluating model performance and selecting the best model.</li>
+                    <li><strong>Python Programming:</strong> Implementation using libraries like scikit-learn, XGBoost, CatBoost, and pandas.</li>
+                    <li><strong>Web Development:</strong> Creating a user-friendly interface with Flask and integrating the model for predictions.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+</body>
+</html>

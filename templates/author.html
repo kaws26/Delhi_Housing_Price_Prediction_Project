@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Housing Price Predictor</a>
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict Housing Price</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/author">Author</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="author">
+        <div class="container">
+            <div class="author-info">
+                <div class="author-photo">
+                    <img src="{{ url_for('static', filename='kawal.jpg') }}" alt="Your Photo">
+                </div>
+                <div class="author-details">
+                    <h1>About Me</h1>
+                    <h3>Kawaljeet Singh</h3>
+                    <p><strong>University:</strong> Guru Gobind Singh Indraprastha University, Dwarka Sec-16</p>
+                    <p><strong>Graduation Year:</strong> 2027</p>
+                    <p><strong>Interests:</strong> Machine Learning, Deep Learning, Natural Language Processing (NLP)</p>
+                    <p>Hello! I am a machine learning enthusiast with a strong interest in deep learning and NLP. I am currently studying at the University School of Information, Communication, and Technology, Dwarka Sec-16, and will graduate in 2027.</p>
+                    <div class="contact-info">
+                        <p>Feel free to reach out to me:</p>
+                        <p><a href="kawaljeetsingh0026@gmail.com" class="contact-link">E-Mail ID: kawaljeetsingh0026@gmail.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/kawaljeet-singh-071626282/" class="contact-link" target="_blank">LinkedIn Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+</body>
+</html>

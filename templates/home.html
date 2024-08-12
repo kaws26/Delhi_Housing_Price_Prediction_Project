@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Housing Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='image.png') }}" type="image/x-icon">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Housing Price Predictor</a>
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict Housing Price</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/author">Author</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to the Delhi Housing Price Predictor</h1>
+            <p>Get accurate predictions based on real data and modern algorithms.</p>
+            <a href="/predict" class="btn-primary">Start Predicting</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Accurate Predictions</h3>
+                    <p>Our model is built on real data to provide the most accurate predictions possible.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Easy to navigate and input your details, with a sleek, modern design.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Data-Driven Insights</h3>
+                    <p>Understand the factors that influence housing prices in Delhi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

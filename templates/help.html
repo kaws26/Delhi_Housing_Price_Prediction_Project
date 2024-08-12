@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='image.png') }}" type="image/x-icon">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Housing Price Predictor</a>
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict Housing Price</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/author">Author</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="help">
+        <div class="container">
+            <h2>Help & Support</h2>
+            <div class="help-content">
+                <h3>Frequently Asked Questions</h3>
+                <p><strong>How do I use the housing price predictor?</strong></p>
+                <p>Enter the property details, including location, area, and other features. Click the "Predict" button to get the estimated price.</p>
+                <p><strong>What if I encounter an issue?</strong></p>
+                <p>If you experience any issues, please reach out to our support team via the contact details provided on the Author page.</p>
+                <p><strong>Can I provide feedback?</strong></p>
+                <p>Yes! We welcome feedback and suggestions. Feel free to contact us through the channels listed on the Author page.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+</body>
+</html>

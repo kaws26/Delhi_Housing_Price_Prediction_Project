@@ -1,0 +1,435 @@
+/* Base Styles */
+body.dark-theme {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #000000, #434343); /* Black to dark gray gradient */
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.navbar-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #b0b0b0; /* Light gray on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://directlinedev.com/media/portfolio/cases/background/background_66.wide.jpeg') no-repeat center center/cover;
+    padding: 6rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #1c1c1c, #4d4d4d); /* Dark gray gradient */
+    color: #ffffff;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4d4d4d, #1c1c1c); /* Inverted gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Light gray text */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+}
+
+.feature-item {
+    background: linear-gradient(145deg, #1c1c1c, #333333); /* Dark gray gradient */
+    padding: 2.5rem;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.feature-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light gray text */
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #b0b0b0; /* Light gray text */
+}
+
+/* Predict Section */
+.predict {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.predict h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #ffffff; /* Light gray text */
+}
+
+/* Map */
+#map {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Light gray text */
+}
+
+.form-group input, .form-group select {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(145deg, #2a2a2a, #1c1c1c); /* Dark gray gradient */
+    color: #ffffff; /* Light gray text */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border: 1px solid #ffffff; /* White focus border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Instructions */
+.instructions {
+    font-size: 1rem;
+    color: #b0b0b0; /* Light gray text */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.instructions strong {
+    color: #ffffff; /* Light gray strong text */
+}
+
+
+/* Results Section */
+.results {
+    padding: 5rem 0;
+    text-align: center;
+    background: linear-gradient(145deg, #1e1e1e, #121212); /* Dark gradient background */
+    min-height: 100vh; /* Ensure it takes up the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results-box {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e); /* Dark gray gradient */
+    padding: 3rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.results-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light gray text */
+}
+
+.result-content {
+    margin: 2rem 0;
+}
+
+.results-box h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Light gray text */
+}
+
+.results-box .price {
+    font-size: 3rem;
+    color: #00bfae; /* Teal color for the price */
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Shared Styles for Info, Author, and Help Sections */
+.info, .author, .help {
+    padding: 5rem 0;
+    background: linear-gradient(145deg, #1e1e1e, #121212); /* Dark gradient background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content, .author-info, .help-content {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e); /* Dark gray gradient */
+    padding: 3rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light gray text */
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light gray text */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #b0b0b0; /* Light gray text */
+    margin-bottom: 1rem;
+}
+
+ul.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+ul.social-links a {
+    color: #007bff; /* Primary color */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+ul.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Author Section */
+.author {
+    padding: 5rem 0;
+    background: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.author-photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.author-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.author-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dataset-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.dataset-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .form-group input, .form-group select {
+        width: 90%;
+    }
+}
