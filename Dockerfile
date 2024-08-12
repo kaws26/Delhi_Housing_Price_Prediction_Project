@@ -18,4 +18,4 @@ ENV FLASK_APP=model_app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # Command to run the Flask app
-CMD ["flask", "run"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from src.DelhiHousingProject.exception import CustomException
 from src.DelhiHousingProject.pipelines.prediction_pipeline import CustomData,PredictPipeline
+import os
 app = Flask(__name__)
 
 @app.route('/')
@@ -56,6 +57,6 @@ def author():
 @app.route('/help')
 def help1():
     return render_template('help.html')
-if __name__ == '__main__':
-    app.run(host="0.0.0.0")
-
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
