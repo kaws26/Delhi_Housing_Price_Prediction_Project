@@ -1,7 +1,3 @@
-Here’s a professional README file for your Delhi Housing Price Prediction project:
-
----
-
 # Delhi Housing Price Prediction
 
 This project provides an interactive tool for predicting housing prices in Delhi, leveraging machine learning and data science techniques. Using various features, including area, location, number of rooms, and property amenities, the model delivers precise price predictions, empowering users to make informed real estate decisions.
