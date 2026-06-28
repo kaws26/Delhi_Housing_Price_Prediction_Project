@@ -46,8 +46,13 @@ DelhiHousingPricePrediction/
 ---
 ## Project Architecture
 
-Basic Flow
+### Basic Flow
+
 <img width="821" height="419" alt="Client (1)" src="https://github.com/user-attachments/assets/5297fe97-7222-405d-bd14-f99eb426c0b2" />
+
+### Model Training pipeline
+
+<img width="868" height="291" alt="Data Ingestion (1)" src="https://github.com/user-attachments/assets/4e724ee7-cda9-4110-87c2-a7fcebe9c9ba" />
 
 
 ---
