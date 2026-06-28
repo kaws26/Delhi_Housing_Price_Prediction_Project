@@ -54,6 +54,10 @@ DelhiHousingPricePrediction/
 
 <img width="868" height="291" alt="Data Ingestion (1)" src="https://github.com/user-attachments/assets/4e724ee7-cda9-4110-87c2-a7fcebe9c9ba" />
 
+### Full System Architecture
+
+<img width="6158" height="5656" alt="mermaid-diagram-2026-06-28T15-57-00" src="https://github.com/user-attachments/assets/6627b9d6-30ed-48a4-8f64-79cff29c0387" />
+
 
 ---
 
